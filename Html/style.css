@@ -1,0 +1,6 @@
+table,tr,th{
+    width: auto; 
+    border: 1px solid black; 
+    text-align: center;
+    border-collapse: collapse;
+}

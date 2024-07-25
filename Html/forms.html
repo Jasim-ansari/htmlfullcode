@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        form{
+            display: contents ;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"],
+        textarea {
+            width: auto;
+            padding: 2px;
+            margin: 2px 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <form>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required><br>
+        
+        <label for="middleName">Middle Name:</label>
+        <input type="text" id="middleName" name="middleName" placeholder="Enter your middle name"><br>
+        
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+    
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required><br>
+        
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder="Enter your age" required><br>
+
+
+
+        <label for="hobbies">Hobbies:</label><br>
+        <input type="checkbox" name="interest" value="Cricket" id="cricket">
+        <label for="cricket">Cricket</label><br>
+        <input type="checkbox" name="interest" value="Kabaddi" id="kabaddi">
+        <label for="kabaddi">Kabaddi</label><br>
+        <input type="checkbox" name="interest" value="Reading" id="reading">
+        <label for="reading">Reading</label><br>
+
+
+
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label><br>
+
+        <label for="Country">Country:</label>
+        <select name="Country" id="country">
+            <option value="USA">USA</option>
+            <option value="CANADA">CANADA</option>
+            <option value="India">India</option>
+        </select><br>
+        
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the terms and conditions</label><br>
+        
+        <label for="Description">Reason for signUp:</label>
+        <textarea id="Description" name="feedback" placeholder="Reason for signUp" rows="4"></textarea><br>
+        
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
